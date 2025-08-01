@@ -5,24 +5,24 @@
 # Logistics
 
 ### Lecture
-In person in Murdoch 814 from 12 - 1:30 pm Tuesdays and Thursdays.  
+In person in Murdoch 814 from 12 - 1:20 pm Tuesdays and Thursdays.  
 
 ### Instructors
 John P. Barton  
 Murdoch 830  
 jpbarton@pitt.edu  
 
-Mert Gur  
-Murdoch 832  
-gurmert@pitt.edu  
-
 Shikhar Uttam  
 Hillman Cancer Center Research Pavilion Suite 2.6f  
 shf28@pitt.edu  
 
+Mert Gur  
+Murdoch 832  
+gurmert@pitt.edu  
+
 ### Teaching assistant
-Aaron Francis  
-aaf92@pitt.edu  
+Rezwan Hosseini  
+SEH197@pitt.edu  
 
 
 # Course summary
@@ -32,7 +32,7 @@ Computers have become essential tools for biology, as well as other scientific d
 - Numerical optimization in Python  
 - Analysis of different types of biological data, including genetic sequences, protein structures, and images 
 
-We will use [Python 3](https://www.python.org/download/releases/3.0/) to introduce methods and assignments, along with [Jupyter](https://jupyter.org/) notebooks. The syllabus, course web page, and assignments will all be hosted on [GitHub](https://github.com/).
+We will use [Python 3](https://www.python.org/download/releases/3.0/) to introduce methods and assignments, along with [Jupyter](https://jupyter.org/) notebooks. The syllabus, course web page, and assignments will all be hosted on [GitHub](https://github.com/).  
 
 
 # Grading and assessment
@@ -44,4 +44,4 @@ Homework assignments will be automatically graded through GitHub Classroom. A ru
 
 You are encouraged to collaborate with one another on homework assignments and projects. If you work in a team on an assignment, please add a comment in your code listing your teammates. Similarly, if you receive help from another student on a specific problem or part of an assignment, please add a comment to acknowledge this in that part of the code.  
 
-If you get stuck on a problem, to get the most out of the course, it's worthwhile to take the time to think it through carefully and attempt to work it out individually/within your group. If you're still stuck, feel free to reach out to other students or instructors with questions.
+If you get stuck on a problem, to get the most out of the course, it's worthwhile to take the time to think it through carefully and attempt to work it out individually/within your group. If you're still stuck, feel free to reach out to other students or instructors with questions.  

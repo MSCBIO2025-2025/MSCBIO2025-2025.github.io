@@ -1,45 +1,25 @@
 # MSCBIO 2025: Introduction to bioinformatics programming in Python
-### Fall 2024
+### Fall 2025
 
+This page provides a rough outline of topics that we will cover in the course. Details for each lecture will appear on the main page.  
 
 **Topic 1: Course overview and introduction to Python**  
 - Introduction to MSCBIO 2025  
+- Working with the command line  
 - Python, Jupyter, and GitHub  
-- Data visualization
 
-**Topic 2: Simple modeling and data processing**  
+**Topic 2: Principles of coding and data analysis in Python (interwoven with Topic 3)**  
+- Data visualization  
+- Principles of code design  
 - Function fitting  
-- Systems biology modeling  
-- Sequence analysis  
-- Tabular data with pandas  
+- Principles of data analysis  
 
-**Topic 3: Protein structure**  
+**Topic 3: Simple biological applications (interwoven with Topic 2)**  
+- Integrating differential equations  
+- Systems biology modeling  
+- Simple sequence analysis   
+
+**Topic 4: Protein structure**  
 - Structure analysis with ProDy  
 - Molecular dynamics  
 
-<!--
-**Topic 4: Probability and random numbers**  
-- Introduction to probability and random numbers  
-- Computing with probability distributions  
-
-**Topic 5: Stochastic models in physics**
-- Statistical physics and probability   
-- The Ising model  
-- Markov chain Monte Carlo  
-- Monte Carlo simulation for the Ising model  
-
-**Topic 6: Optimization methods**  
-- Convex optimization and steepest descent  
-- Line search  
-- Newton's method  
-
-**Topic 7: Statistical inference**  
-- Loss functions and linear regression  
-- Likelihood-based inference  
-- Bayesian inference  
-
-**Topic 8: Data handling/visualization/machine learning**  
-- Tidy data  
-- Data visualization  
-- The perceptron model  
--->

@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>lecture-02-bash2 slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>lecture-02-files slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7415,6 +7415,7 @@ main {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7433,769 +7434,586 @@ main {
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="reveal">
-<div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="slides"><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c7b9ee22-4d82-4ebe-b718-bfc4b8845a37">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Text-processing-with-the-Linux-command-line">Text processing with the Linux command line<a class="anchor-link" href="#Text-processing-with-the-Linux-command-line">¶</a></h1><p><a href="?print-pdf">print view</a><br/>
-<a href="lecture-02-bash2.ipynb">notebook</a></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Review">Review<a class="anchor-link" href="#Review">¶</a></h1><p><code>ls</code> - list files</p>
-<p><code>cd</code> - change directory</p>
-<p><code>pwd</code> - print working (current) directory</p>
-<p><code>..</code> - special file that refers to parent directory</p>
-<p><code>.</code> - the current directory</p>
-<p><code>cat file</code> - print out contents of <em>file</em></p>
-<p><code>more file</code> - print contents of <em>file</em> with pagination</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Shortcuts">Shortcuts<a class="anchor-link" href="#Shortcuts">¶</a></h1><p><code>Tab</code> autocomplete</p>
-<p><code>Ctrl-D</code>  EOF/logout/exit</p>
-<p><code>Ctrl-A</code>  go to beginning of line</p>
-<p><code>Ctrl-E</code>  go to end of line</p>
-<p><code>alias new=cmd</code></p>
-<pre>
-make a nickname for a command
-$ alias l='ls -l'
-$ alias
-$ l
-</pre>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id=".bashrc-example"><code>.bashrc</code> example<a class="anchor-link" href="#.bashrc-example">¶</a></h2><pre><code>HISTCONTROL=ignoredups
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.core.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
 
-#immediately append instead of at end of session, clear and re-read .bash_history
-export PROMPT_COMMAND="history -a; history -c; history -r"
-#append instead of overwrite history
-shopt -s histappend
+<span class="k">def</span><span class="w"> </span><span class="nf">_set_css_style</span><span class="p">(</span><span class="n">css_file_path</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">"""</span>
+<span class="sd">   Read the custom CSS file and load it into Jupyter.</span>
+<span class="sd">   Pass the file path to the CSS file.</span>
+<span class="sd">   """</span>
 
-export HISTSIZE=1000000
+   <span class="n">styles</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">css_file_path</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+   <span class="n">s</span> <span class="o">=</span> <span class="s1">'&lt;style&gt;</span><span class="si">%s</span><span class="s1">&lt;/style&gt;'</span> <span class="o">%</span> <span class="n">styles</span>     
+   <span class="k">return</span> <span class="n">HTML</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 
-# If set, Bash checks the window size after each command 
-shopt -s checkwinsize
-
-alias mroe=more
-alias grpe=grep
-
-export PYTHONPATH=$PYTHONPATH:/usr/local/python
-export PATH=$PATH:$HOME/bin
-</code></pre>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Loops">Loops<a class="anchor-link" href="#Loops">¶</a></h2><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span>x<span class="w"> </span>y<span class="w"> </span>z
-<span class="k">do</span>
-<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$i</span>
-<span class="k">done</span>
-
-<span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>*.txt
-<span class="k">do</span>
-<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$file</span>
-<span class="k">done</span>
-</pre></div>
-<p><a href="http://tldp.org/LDP/abs/html/loops.html">Lots more... (TLDP)</a></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="What-is-the-last-line-to-print-out?">What is the last line to print out?<a class="anchor-link" href="#What-is-the-last-line-to-print-out?">¶</a></h1><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..10<span class="o">}</span>
-<span class="k">do</span>
-<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$i</span>
-<span class="k">done</span>
-</pre></div>
-<p><code>{1..10}</code><br>
-<code>9</code><br/>
-<code>10</code><br/>
-An error</br></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..10<span class="o">}</span>
-<span class="k">do</span>
-<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$i</span>
-<span class="k">done</span>
-<span class="m">1</span>
-<span class="m">2</span>
-<span class="m">3</span>
-<span class="m">4</span>
-<span class="m">5</span>
-<span class="m">6</span>
-<span class="m">7</span>
-<span class="m">8</span>
-<span class="m">9</span>
-<span class="m">10</span>
+<span class="n">_set_css_style</span><span class="p">(</span><span class="s1">'rise.css'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+</div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2a5c9d56">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Input/output-redirection">Input/output redirection<a class="anchor-link" href="#Input/output-redirection">¶</a></h1><p><code>&gt;</code> send <em>standard output</em> to file</p>
-<pre>
-$ echo Hello &gt; h.txt
-</pre>
-<p><code>&gt;&gt;</code> append to file</p>
-<pre>
-$ echo World &gt;&gt; h.txt
-</pre>
-<p><code>&lt;</code>  send file to <em>standard input</em> of command</p>
-<p><code>2&gt;</code>  send <em>standard error</em> to file</p>
-<p><code>&gt;&amp;</code>  send output and error to file</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="What-prints-out?">What prints out?<a class="anchor-link" href="#What-prints-out?">¶</a></h1><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Hello<span class="w"> </span>&gt;<span class="w"> </span>h.txt
-$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>World<span class="w"> </span>&gt;&gt;<span class="w"> </span>h.txt
-$<span class="w"> </span>cat<span class="w"> </span>h.txt
-</pre></div>
-<p><code>Hello</code><br/>
-<code>World</code><br/>
-<code>HelloWorld</code><br/>
-<code>Hello\nWorld</code><br/>
-An error</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Hello<span class="w"> </span>&gt;<span class="w"> </span>h.txt
-$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>World<span class="w"> </span>&gt;&gt;<span class="w"> </span>h.txt
-$<span class="w"> </span>cat<span class="w"> </span>h.txt
-Hello
-World
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Pipes">Pipes<a class="anchor-link" href="#Pipes">¶</a></h1><p>A pipe (<code>|</code>) redirects the <em>standard output</em> of one program to the <em>standard input</em> of another.  It's like you typed the output of the first program into the second.  This allows us to chain several simple programs together to do something more complicated.</p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Hello<span class="w"> </span>World<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>man<span class="w"> </span>wc
-</pre></div>
-<pre><code>WC(1)                       General Commands Manual                      WC(1)
-
-NAME  
-     wc – word, line, character, and byte count
-
-SYNOPSIS
-     wc [--libxo] [-Lclmw] [file ...]
-
-DESCRIPTION  
-     The wc utility displays the number of lines, words, and bytes contained
-     in each input file, or standard input (if no file is specified) to the
-     standard output.  A line is defined as a string of characters delimited
-     by a ⟨newline⟩ character.  Characters beyond the final ⟨newline⟩
-     character will not be included in the line count.
-
-     A word is defined as a string of characters delimited by white space
-     characters.  White space characters are the set of characters for which
-     the iswspace(3) function returns true.  If more than one input file is
-     specified, a line of cumulative counts for all the files is displayed on
-     a separate line after the output for the last file. ...
-</code></pre>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Simple-text-manipulation">Simple text manipulation<a class="anchor-link" href="#Simple-text-manipulation">¶</a></h1><p><code>cat</code> dump file to stdout</p>
-<p><code>more</code> paginated output</p>
-<p><code>head</code> show first 10 lines</p>
-<p><code>tail</code> show last 10 lines</p>
-<p><code>wc</code> count lines/words/characters</p>
-<p><code>sort</code> sort file by line and print out (<code>-n</code> for numerical sort)</p>
-<p><code>uniq</code> remove <strong>adjacent</strong> duplicates (<code>-c</code> to count occurances)</p>
-<p><code>cut</code> extract fixed width columns from file</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>text
-a
-b
-a
-b
-b
-$<span class="w"> </span>cat<span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="What-is-the-first-number-to-print-out?">What is the first number to print out?<a class="anchor-link" href="#What-is-the-first-number-to-print-out?">¶</a></h1><p><code>1</code><br/>
-<code>2</code><br/>
-<code>3</code><br/>
-<code>4</code><br/>
-<code>5</code><br/>
-None of the above</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
-a
-a
-b
-b
-b
-$<span class="w"> </span>cat<span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
-a
-b
-$<span class="w"> </span>cat<span class="w"> </span>cat<span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-<span class="w">       </span><span class="m">2</span><span class="w">       </span><span class="m">2</span><span class="w">       </span><span class="m">4</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Advanced-text-manipulation">Advanced text manipulation<a class="anchor-link" href="#Advanced-text-manipulation">¶</a></h1><p><code>grep</code> search contents of file for expression</p>
-<p><code>sed</code> stream editor - perform substitutions</p>
-<p><code>awk</code> pattern scanning and processing, great for dealing with data in columns</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="grep">grep<a class="anchor-link" href="#grep">¶</a></h1><p>Search file(s) contents for a pattern.</p>
-<p><code>grep pattern file(s)</code></p>
+<h2 id="File-systems-and-the-command-line">File systems and the command line<a class="anchor-link" href="#File-systems-and-the-command-line">¶</a></h2><p><a href="?print-pdf">print view</a><br/>
+<a href="lecture-02-files.ipynb">notebook</a></p>
 <ul>
-<li><code>‐r</code> recursive search</li>
-<li><code>‐I</code> skip over binary files</li>
-<li><code>‐s</code> suppress error messages</li>
-<li><code>‐n</code> show line numbers</li>
-<li><code>‐A</code> <em>N</em> show <em>N</em> lines after match</li>
-<li><code>‐B</code> <em>N</em> show <em>N</em> lines before match</li>
+<li>Distinguish <strong>absolute</strong> and <strong>relative</strong> paths</li>
+<li>Identify your <strong>home directory</strong> on macOS, Windows, and Linux</li>
+<li>Use core shell commands (<code>pwd</code>, <code>ls</code>, <code>cd</code>, <code>mkdir</code>, <code>cp</code>, <code>mv</code>, <code>rm</code>) to navigate and manage files</li>
+<li>Apply a sensible directory layout for research projects</li>
+<li>Execute shell commands <em>inside</em> a Jupyter notebook using <code>!</code> or <code>%%bash</code></li>
 </ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c0abc23c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="What-is-the-first-number-to-print-out?">What is the first number to print out?<a class="anchor-link" href="#What-is-the-first-number-to-print-out?">¶</a></h1><div class="highlight"><pre><span></span>$<span class="w"> </span>grep<span class="w"> </span>a<span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-</pre></div>
-<p><code>1</code><br/>
-<code>2</code><br/>
-<code>3</code><br/>
-<code>4</code><br/>
-<code>5</code><br/>
-None of the above</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>grep<span class="w"> </span>a<span class="w"> </span>text
-a
-a
-$<span class="w"> </span>grep<span class="w"> </span>a<span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-<span class="w">       </span><span class="m">2</span><span class="w">       </span><span class="m">2</span><span class="w">       </span><span class="m">4</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="grep-patterns">grep patterns<a class="anchor-link" href="#grep-patterns">¶</a></h1><p>Patterns are defined using <em>regular expressions</em>.  Some useful special characters.</p>
-<ul>
-<li><code>^pattern</code>  pattern must be at start of line</li>
-<li><code>pattern$</code> pattern must be at end of line</li>
-<li><code>.</code> match any character, <strong>not</strong> period</li>
-<li><code>.*</code> match any charcter repeated any number of times</li>
-<li><code>\.</code> escape a special character to treat it literally (i.e., this matches period)</li>
+<h2 id="About-file-systems">About file systems<a class="anchor-link" href="#About-file-systems">¶</a></h2><ul>
+<li>A hierarchical “tree” of directories and files beginning at the <strong>root</strong> (<code>/</code> or a drive letter)</li>
+<li>Each file has a <em>path</em> that tells the computer how to reach it</li>
+<li>File <strong>extensions</strong> hint at type, but the OS ultimately stores bytes -- be explicit</li>
 </ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da462a9b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="sed">sed<a class="anchor-link" href="#sed">¶</a></h1><p>Search and replace</p>
-<div class="highlight"><pre><span></span>sed<span class="w"> </span><span class="s1">'s/pattern/replacement/'</span><span class="w"> </span>file
-</pre></div>
-<ul>
-<li><code>‐i</code> replace in-place (overwrites input file)</li>
+<h3 id="Home-directories-across-operating-systems">Home directories across operating systems<a class="anchor-link" href="#Home-directories-across-operating-systems">¶</a></h3><table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Typical home path</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>macOS / Linux</td>
+<td><code>/Users/&lt;user&gt;</code> or <code>/home/&lt;user&gt;</code></td>
+<td><code>/Users/alice</code></td>
+<td>Forward‐slash <code>/</code> separator</td>
+</tr>
+<tr>
+<td>Windows 10+</td>
+<td><code>C:\Users\&lt;user&gt;</code></td>
+<td><code>C:\Users\Bob</code></td>
+<td>Back‑slash <code>\</code> separator</td>
+</tr>
+<tr>
+<td>HPC cluster</td>
+<td><code>/home/&lt;user&gt;</code></td>
+<td><code>/home/ab1234</code></td>
+<td>Access via <strong>SSH</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Within WSL, main Windows folders are reached through <code>/mnt/c/&lt;path&gt;</code>, assuming the default <code>C</code> drive</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7d5e4304">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Absolute-vs%E2%80%AFrelative-paths">Absolute vs relative paths<a class="anchor-link" href="#Absolute-vs%E2%80%AFrelative-paths">¶</a></h3><ul>
+<li><strong>Absolute</strong> – always starts from the root or drive: <code>/Users/alice/course-filesystem-lab/data/README.md</code></li>
+<li><strong>Relative</strong> – interpreted <em>from your current working directory</em>: <code>data/README.md</code></li>
+<li><code>.</code> = <em>this</em> directory  <code>..</code> = <em>parent</em> directory</li>
 </ul>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=55f36052">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="What-is-the-first-number-to-print-out?">What is the first number to print out?<a class="anchor-link" href="#What-is-the-first-number-to-print-out?">¶</a></h1><div class="highlight"><pre><span></span>$<span class="w"> </span>sed<span class="w"> </span><span class="s1">'s/a/b/'</span><span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-</pre></div>
-<p><code>1</code><br/>
-<code>2</code><br/>
-<code>3</code><br/>
-<code>4</code><br/>
-<code>5</code><br/>
-None of the above</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>sed<span class="w"> </span><span class="s1">'s/a/b/'</span><span class="w"> </span>text<span class="w">            </span>
-b
-b
-b
-b
-b
-$<span class="w"> </span>sed<span class="w"> </span><span class="s1">'s/a/b/'</span><span class="w"> </span>text<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-<span class="w">       </span><span class="m">1</span><span class="w">       </span><span class="m">1</span><span class="w">       </span><span class="m">2</span>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Where am I?  (print working directory)</span>
+<span class="o">!</span>pwd
 </pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=07ca50e6-fc33-4c8d-bacb-cb2dc858551c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="awk">awk<a class="anchor-link" href="#awk">¶</a></h1><p>Pattern scanning and processing language. We'll mostly use it to extract columns/fields. It processes a file line-by-line and if a condition holds runs a simple program on the line.</p>
-<p><code> awk 'optional condition {awk program}' file</code></p>
-<ul>
-<li><code>-Fx</code> make <em>x</em> the field deliminator (default whitespace)</li>
-<li><code>NF</code> number of fields on current line</li>
-<li><code>NR</code> current record number</li>
-<li><code>\$0</code> full line</li>
-<li><code>\$N</code> Nth field</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="awk">awk<a class="anchor-link" href="#awk">¶</a></h1><div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>names
-id<span class="w"> </span>last,first<span class="w"> </span>
-<span class="m">1</span><span class="w"> </span>Smith,Alice
-<span class="m">2</span><span class="w"> </span>Jones,Bob
-<span class="m">3</span><span class="w"> </span>Smith,Charlie
-</pre></div>
-<p>Try these:</p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'{print $1}'</span><span class="w"> </span>names
-$<span class="w"> </span>awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'{print $2}'</span><span class="w"> </span>names
-$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'NR &gt; 1 {print $2}'</span><span class="w"> </span>names<span class="w"> </span>
-$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'$1 &gt; 1 {print $0}'</span><span class="w"> </span>names
-$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'NR &gt; 1 {print $2}'</span><span class="w"> </span>names<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'{print $1}'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>%%bash
+<span class="c1"># Doing the same thing with magic commands</span>
+<span class="nb">pwd</span>
 </pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9061b197-f1f3-4409-b5dd-efbf8058ae5c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'{print $1}'</span><span class="w"> </span>names
-id
-<span class="m">1</span>
-<span class="m">2</span>
-<span class="m">3</span>
-$<span class="w"> </span>awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'{print $2}'</span><span class="w"> </span>names
-first<span class="w"> </span>
-Alice
-Bob
-Charlie
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Note that %% commands need to be at the top!</span>
+<span class="o">%%</span><span class="k">bash</span>
+pwd
 </pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7ca33f7c-b40e-4c72-87cc-89609b53425f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'NR &gt; 1 {print $2}'</span><span class="w"> </span>names
-Smith,Alice
-Jones,Bob
-Smith,Charlie
-$<span class="w"> </span>awk<span class="w"> </span><span class="s1">'$1 &gt; 1 {print $0}'</span><span class="w"> </span>names
-id<span class="w"> </span>last,first<span class="w"> </span>
-<span class="m">2</span><span class="w"> </span>Jones,Bob
-<span class="m">3</span><span class="w"> </span>Smith,Charlie
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># What is here?  (list files, including hidden dotfiles)</span>
+<span class="o">!</span>ls<span class="w"> </span>-a
 </pre></div>
 </div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Exercises">Exercises<a class="anchor-link" href="#Exercises">¶</a></h1><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>intro
-<span class="nb">cd</span><span class="w"> </span>intro
-wget<span class="w"> </span>http://mscbio2025-2024.github.io/files/Spellman.csv
-wget<span class="w"> </span>http://mscbio2025-2024.github.io/files/1shs.pdb
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Questions">Questions<a class="anchor-link" href="#Questions">¶</a></h1><ul>
-<li>How many data points are in Spellman.csv?</li>
-<li>The first three letters of the systematic open reading frames are: 'Y' for yeast, the chromosome number, then the chromosome arm. In the dataset, how many ORFs from chromosome A are there?</li>
-<li>How many are there from each chromosome?<ul>
-<li>each chromosome arm?</li>
-</ul>
-</li>
-<li>How many data points start with a positive expression value?</li>
-<li>What are the 10 data points with the highest initial expression values?<ul>
-<li>Lowest?</li>
-</ul>
-</li>
-<li>How many lines are there where expression values are continuously increasing for the first 3 time steps?</li>
-<li>Sorted by biggest increase?</li>
-</ul>
 </div>
 </div>
 </div>
 </div><aside class="notes">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fa25a584-bc11-4f54-baa9-48798b24cfd1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>wc<span class="w"> </span>Spellman.csv<span class="w">   </span><span class="o">(</span>gives<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>lines,<span class="w"> </span>because<span class="w"> </span>of<span class="w"> </span>header<span class="w"> </span>this<span class="w"> </span>is<span class="w"> </span>off<span class="w"> </span>by<span class="w"> </span>one<span class="o">)</span>
-grep<span class="w"> </span>YA<span class="w"> </span>Spellman.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-grep<span class="w"> </span>^YA<span class="w"> </span>Spellman.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w">  </span><span class="o">(</span>this<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>bit<span class="w"> </span>better,<span class="w"> </span>^<span class="w"> </span>matches<span class="w"> </span>begining<span class="w"> </span>of<span class="w"> </span>line<span class="o">)</span>
-grep<span class="w"> </span>^YA<span class="w"> </span>-c<span class="w"> </span>Spellman.csv<span class="w">  </span><span class="o">(</span>grep<span class="w"> </span>can<span class="w"> </span>provide<span class="w"> </span>the<span class="w"> </span>count<span class="w"> </span>itself<span class="o">)</span>
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1 {print $1}'</span><span class="w"> </span>Spellman.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-b<span class="w"> </span><span class="m">1</span>-2<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1 {print $1}'</span><span class="w"> </span>Spellman.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-b<span class="w"> </span><span class="m">1</span>-3<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1 &amp;&amp; $2 &gt; 0 {print $0}'</span><span class="w"> </span>Spellman.csv<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1  {print $1,$2}'</span><span class="w"> </span>Spellman.csv<span class="w">  </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-k2,2<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1  {print $1,$2}'</span><span class="w"> </span>Spellman.csv<span class="w">  </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-k2,2<span class="w"> </span>-n<span class="w"> </span>-r<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1 &amp;&amp; $3 &gt; $2 &amp;&amp; $4 &gt; $3 {print $0}'</span><span class="w"> </span>Spellman.csv<span class="w">  </span><span class="p">|</span>wc
-awk<span class="w"> </span>-F,<span class="w"> </span><span class="s1">'NR &gt; 1 &amp;&amp; $3 &gt; $2 &amp;&amp; $4 &gt; $3  {print $4-$2,$0}'</span><span class="w"> </span>Spellman.csv<span class="w">   </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-n<span class="w"> </span>-k1,1
+</div>
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f0225a92">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Command%E2%80%91line-navigation">Command‑line navigation<a class="anchor-link" href="#Command%E2%80%91line-navigation">¶</a></h2><p>Try these yourself in the notebook or an external terminal. Use <strong>TAB completion</strong>!</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+<th>Handy options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show location</td>
+<td><code>pwd</code></td>
+<td>–</td>
+</tr>
+<tr>
+<td>List directory</td>
+<td><code>ls</code></td>
+<td><code>-l</code> long, <code>-a</code> all, <code>-h</code> human‑readable sizes</td>
+</tr>
+<tr>
+<td>Change directory</td>
+<td><code>cd &lt;path&gt;</code></td>
+<td><code>cd ~</code>, <code>cd ..</code></td>
+</tr>
+<tr>
+<td>Make directory</td>
+<td><code>mkdir &lt;name&gt;</code></td>
+<td><code>-p</code> create parents</td>
+</tr>
+<tr>
+<td>Copy / move</td>
+<td><code>cp</code>, <code>mv</code></td>
+<td><code>-i</code> interactive prompt</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td><code>rm</code>, <code>rm -r</code></td>
+<td><code>-i</code>, <em>never</em> <code>rm -rf /</code> 😱</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=42511086">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>%%bash
+<span class="c1"># Create an example project tree and explore it</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>demo_project/data<span class="w"> </span>demo_project/results
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"example"</span><span class="w"> </span>&gt;<span class="w"> </span>demo_project/data/dummy.txt
+<span class="nb">cd</span><span class="w"> </span>demo_project
+<span class="nb">pwd</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"--- contents ---"</span>
+ls<span class="w"> </span>-R
+<span class="nb">cd</span><span class="w"> </span>..
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</aside></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="More">More<a class="anchor-link" href="#More">¶</a></h1><ul>
-<li>Create a pdb file from 1shs that consists of only ATOM records.</li>
-<li>Create a pdb with only ATOM records from chain A. (The chain is the fifth column* of an atom record)</li>
-<li>How many carbon atoms are in this file?</li>
-<li>Create a pdb with only the ATOM records from chain G, but with the chain renamed to be A.</li>
-</ul>
-<p>*PDB files are actually fixed files, not space deliminated, but with this file you can ignore that distinction.</p>
 </div>
 </div>
 </div>
 </div><aside class="notes">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1e57c1e7-51a1-42f5-8460-73c3ca52275a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>grep<span class="w"> </span>^ATOM<span class="w"> </span>1shs.pdb<span class="w"> </span>&gt;<span class="w"> </span>newpdb.pdb<span class="w"> </span><span class="o">(</span>^matches<span class="w"> </span>beginning<span class="w"> </span>of<span class="w"> </span>line<span class="o">)</span>
-grep<span class="w"> </span>^ATOM<span class="w"> </span>1shs.pdb<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">'$5 == "A" {print $0}'</span>
-<span class="c1"># this is UNSAFE with pdb files since there is no guarantee that fields</span>
-<span class="c1"># will be whitespace seperated, safer is:</span>
-grep<span class="w"> </span>^ATOM<span class="w"> </span>1shs.pdb<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">' substr($0,22,1) == "A" {print $0}'</span><span class="w"> </span>&gt;<span class="w"> </span>newpdb.pdb
-<span class="w"> </span>
-grep<span class="w"> </span>^ATOM<span class="w"> </span>1shs.pdb<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">' substr($0,22,1) == "A" {print $0}'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-b<span class="w"> </span><span class="m">78</span>-<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
-grep<span class="w"> </span>^ATOM<span class="w"> </span>1shs.pdb<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">'$5 == "A" {print $0}'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">'s/ G / A /'</span>
-</pre></div>
 </div>
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</aside></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f812998">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Running-Python">Running Python<a class="anchor-link" href="#Running-Python">¶</a></h1><div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>hi.py<span class="w"> </span>
-print<span class="o">(</span><span class="s2">"hi"</span><span class="o">)</span>
-$<span class="w"> </span>python3<span class="w"> </span>hi.py
-hi
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span>$<span class="w"> </span>cat<span class="w"> </span>hi.py<span class="w"> </span>
-<span class="c1">#!/usr/bin/python3</span>
-print<span class="o">(</span><span class="s2">"hi"</span><span class="o">)</span>
-$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>hi.py<span class="w">  </span><span class="c1"># make the file executable</span>
-$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>hi.py<span class="w"> </span>
--rwxr-xr-x<span class="w">  </span><span class="m">1</span><span class="w"> </span>jpb156<span class="w">  </span>staff<span class="w">  </span><span class="m">29</span><span class="w"> </span>Sep<span class="w">  </span><span class="m">3</span><span class="w"> </span><span class="m">16</span>:05<span class="w"> </span>hi.py
-$<span class="w"> </span>./hi.py<span class="w"> </span>
-hi
-</pre></div>
+<h3 id="A-reusable-project-layout">A reusable project layout<a class="anchor-link" href="#A-reusable-project-layout">¶</a></h3><pre><code>my-analysis/
+├── data/        ← raw &amp; intermediate datasets (never edit raw)
+├── notebooks/   ← exploratory notebooks
+├── scripts/     ← reusable Python/bash scripts
+├── results/     ← figures &amp; tables generated by scripts/notebooks
+└── env/         ← environment &amp; dependency files
+</code></pre>
+<p>Keeping code, raw data, and generated results <strong>separate</strong> makes projects reproducible (more on this later)</p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=565e6761">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Python-versions">Python versions<a class="anchor-link" href="#Python-versions">¶</a></h1><p><strong>python2</strong>  Legacy python.</p>
-<p><strong>python3</strong> Released in 2008. Mostly the same as python2 but "cleaned up".  Breaks backwards compatibility. May need to specify explicity (<code>python3</code>). <em>We will be using python3</em>.</p>
-<p><a href="https://wiki.python.org/moin/Python2orPython3">https://wiki.python.org/moin/Python2orPython3</a></p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>python
-Python<span class="w"> </span><span class="m">3</span>.10.14<span class="w"> </span><span class="p">|</span><span class="w"> </span>packaged<span class="w"> </span>by<span class="w"> </span>conda-forge<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>main,<span class="w"> </span>Mar<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">2024</span>,<span class="w"> </span><span class="m">12</span>:51:49<span class="o">)</span><span class="w"> </span><span class="o">[</span>Clang<span class="w"> </span><span class="m">16</span>.0.6<span class="w"> </span><span class="o">]</span><span class="w"> </span>on<span class="w"> </span>darwin
-Type<span class="w"> </span><span class="s2">"help"</span>,<span class="w"> </span><span class="s2">"copyright"</span>,<span class="w"> </span><span class="s2">"credits"</span><span class="w"> </span>or<span class="w"> </span><span class="s2">"license"</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>information.
-&gt;&gt;&gt;
-</pre></div>
+<h2 id="Activity">Activity<a class="anchor-link" href="#Activity">¶</a></h2><ol>
+<li>In your home directory, create a folder <code>course-filesystem-lab</code></li>
+<li>Inside it, make the sub‑folders <code>data/</code>, <code>interim/</code>, and <code>results/</code></li>
+<li>Download the file <code>http://mscbio2025-2025.github.io/files/Spellman.csv</code> into <code>data/</code></li>
+<li>Copy it into <code>interim/</code> preserving the original</li>
+<li>Use what you’ve learned (<code>pwd</code>, <code>ls</code>, <code>cp</code>, etc.) to verify the layout</li>
+</ol>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f7a05636-d280-48dc-af00-b6553afd1304">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="IPython">IPython<a class="anchor-link" href="#IPython">¶</a></h1><h2 id="A-powerful-interactive-shell">A powerful interactive shell<a class="anchor-link" href="#A-powerful-interactive-shell">¶</a></h2><ul>
-<li>Tab complete commands, file names</li>
-<li>Support for a number of "shell" commands (ls, cd, pwd, etc)</li>
-<li>Supports up arrow, <code>Ctrl-R</code></li>
-<li>Persistent command history across sessions</li>
-<li>Backbone of notebooks...</li>
+<h2 id="Remote-file-systems,-data-transfer,-and-permissions">Remote file systems, data transfer, and permissions<a class="anchor-link" href="#Remote-file-systems,-data-transfer,-and-permissions">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d8627321-eff2-4139-8703-c7ff8ee754cf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="What-is-SSH?">What is SSH?<a class="anchor-link" href="#What-is-SSH?">¶</a></h3><ul>
+<li>Secure Shell protocol for encrypted remote login</li>
+<li>Same file system layout as local Linux/macOS machines</li>
 </ul>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>ipython
-Python<span class="w"> </span><span class="m">3</span>.10.14<span class="w"> </span><span class="p">|</span><span class="w"> </span>packaged<span class="w"> </span>by<span class="w"> </span>conda-forge<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>main,<span class="w"> </span>Mar<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">2024</span>,<span class="w"> </span><span class="m">12</span>:51:49<span class="o">)</span><span class="w"> </span><span class="o">[</span>Clang<span class="w"> </span><span class="m">16</span>.0.6<span class="w"> </span><span class="o">]</span>
-Type<span class="w"> </span><span class="s1">'copyright'</span>,<span class="w"> </span><span class="s1">'credits'</span><span class="w"> </span>or<span class="w"> </span><span class="s1">'license'</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>information
-IPython<span class="w"> </span><span class="m">8</span>.26.0<span class="w"> </span>--<span class="w"> </span>An<span class="w"> </span>enhanced<span class="w"> </span>Interactive<span class="w"> </span>Python.<span class="w"> </span>Type<span class="w"> </span><span class="s1">'?'</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help.
+<div class="highlight"><pre><span></span>ssh<span class="w"> </span>&lt;username&gt;@&lt;hostname&gt;
+</pre></div>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c841e5c6-f1ce-4098-955a-740feded98a3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Generating-and-using-SSH-keys-(could-differ-on-different-servers)">Generating and using SSH keys (could differ on different servers)<a class="anchor-link" href="#Generating-and-using-SSH-keys-(could-differ-on-different-servers)">¶</a></h3><p>SSH keys unable passwordless login</p>
+<div class="highlight"><pre><span></span><span class="c1"># Generate a new Ed25519 key‑pair</span>
+ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">"student@laptop"</span>
 
-In<span class="w"> </span><span class="o">[</span><span class="m">1</span><span class="o">]</span>:
+<span class="c1"># Copy the public key to the cluster</span>
+ssh-copy-id<span class="w"> </span>student@hpc.example.edu
 </pre></div>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4433916e-e13b-4549-aa55-afc29f880852">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="ipython-notebook">ipython notebook<a class="anchor-link" href="#ipython-notebook">¶</a></h1><strike>
-<pre>
-$ ipython notebook
-</pre>
-</strike>
-<pre>
-$ jupyter notebook
-</pre>
+<h3 id="Copying-files-%E2%80%93-scp">Copying files – <code>scp</code><a class="anchor-link" href="#Copying-files-%E2%80%93-scp">¶</a></h3><ul>
+<li><strong>Syntax:</strong> <code>scp [options] source destination</code></li>
+<li>Copies <em>entire</em> files; no delta‑transfer</li>
+<li>Flags: <code>-r</code> recursive, <code>-p</code> preserve times/permissions, <code>-i</code> identity file, <code>-C</code> compression</li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Copy local notebook to remote home dir</span>
+scp<span class="w"> </span>analysis.ipynb<span class="w"> </span>student@hpc.example.edu:~/
+
+<span class="c1"># Copy an entire folder from remote to local</span>
+scp<span class="w"> </span>-r<span class="w"> </span>student@hpc.example.edu:~/results<span class="w"> </span>./remote_results
+</pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ffc6faf6-b513-453d-96b8-79110c8d9768">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now called Jupyter (not just for python) <a href="https://jupyter.org">jupyter.org</a></p>
-<p>IPython in your browser.  Save your code <em>and</em> your output.</p>
-<p><a href="https://colab.research.google.com/">Colab</a> is basically a Google hosted Jupyter notebook.</p>
-<p>Demo: running code (shift-enter), cell types, saving and exporting, kernel state</p>
+<h3 id="Synchronizing-efficiently-%E2%80%93-rsync">Synchronizing efficiently – <code>rsync</code><a class="anchor-link" href="#Synchronizing-efficiently-%E2%80%93-rsync">¶</a></h3><ul>
+<li>Transfers only changed blocks</li>
+<li>Retains permissions; can delete extraneous files (<code>--delete</code>)</li>
+<li>Works over SSH with <code>-e ssh</code></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Push local results → remote</span>
+rsync<span class="w"> </span>-avh<span class="w"> </span>--progress<span class="w"> </span>results/<span class="w"> </span>student@hpc.example.edu:project/results/
+
+<span class="c1"># Mirror remote scratch directory locally</span>
+rsync<span class="w"> </span>-avzh<span class="w"> </span>--delete<span class="w"> </span>student@hpc.example.edu:scratch/run42/<span class="w"> </span>./run42/
+</pre></div>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c9bdab2-1e75-4b57-b276-138a9d4dfc7a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Why-Jupyter-notebook?">Why Jupyter notebook?<a class="anchor-link" href="#Why-Jupyter-notebook?">¶</a></h1><ul>
-<li>A "lab notebook" for data science</li>
-<li>See output as you run commands</li>
-<li>Embedded figures/output</li>
-<li>Easy to modify and rerun steps</li>
-<li>Can embed formatted text - share code <em>and</em> reason for code</li>
-<li>Can convert to multiple formats (html, pdf, raw python, even slides)</li>
+<h3 id="File-permissions">File permissions<a class="anchor-link" href="#File-permissions">¶</a></h3><ul>
+<li><strong>Three roles:</strong> <em>user</em> (u), <em>group</em> (g), <em>other</em> (o)</li>
+<li><strong>Three bits:</strong> <em>read (r)</em>, <em>write (w)</em>, <em>execute (x)</em></li>
+<li>Symbolic form: <code>drwxr-x---</code></li>
+<li>Numeric (octal) form: <code>750</code></li>
 </ul>
-<p><a href="https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/present?token=AC4w5ViEY1bIVsQHr8Z_JV3-l800VDuEpg%3A1536066747968&amp;includes_info_params=1#slide=id.g362da58057_0_1">A different perspective</a></p>
+<p>Useful commands:</p>
+<div class="highlight"><pre><span></span>ls<span class="w"> </span>-l<span class="w"> </span>file.txt
+chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh<span class="w">      </span><span class="c1"># add execute for user</span>
+chmod<span class="w"> </span>g-w<span class="w"> </span>notes.txt<span class="w">      </span><span class="c1"># remove write for group</span>
+chmod<span class="w"> </span><span class="m">640</span><span class="w"> </span>data.tsv<span class="w">       </span><span class="c1"># rw for user, r for group, – for others</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=00ea586b-3a49-4d28-936d-cfb62ae2d6bb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="More-on-the-command-line">More on the command line<a class="anchor-link" href="#More-on-the-command-line">¶</a></h2><p><code>du</code> - disk usage of files/directores</p>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=698ed4ad-b0bf-4d0a-925d-129d86a33e91">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>%%bash
+du<span class="w"> </span>-s<span class="w">         </span><span class="c1"># -s option to "summarize" usage for all files  </span>
+du<span class="w"> </span>-sh<span class="w">        </span><span class="c1"># -h option for "human-readable" format  </span>
+du<span class="w"> </span>-sh<span class="w"> </span>files<span class="w">  </span><span class="c1"># check usage in a particular directory</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=141ec8a4-7d41-4282-b29b-9fc9d3acc334">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><code>df</code> - usage of full disk</p>
+</div>
+</div>
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=374a680e-afac-4a88-aa91-5f85df3a3c4c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>%%bash
+df<span class="w"> </span>-h<span class="w"> </span>.<span class="w"> </span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><aside class="notes">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6dfb498f-cf65-459a-83e5-0f577dccf48e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a8c75fdb-734b-47a8-9b35-82f40994377e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Finding-files,-directories,-and-information">Finding files, directories, and information<a class="anchor-link" href="#Finding-files,-directories,-and-information">¶</a></h3><p><code>locate</code> find a file system wide<br>
+<code>find</code> search directory tree<br/>
+<code>which</code> print location of a command<br/>
+<code>man</code> print manual page of a command</br></p>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=46723549-ec61-451a-897c-8d1cdc5f35d8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>%%bash
+man<span class="w"> </span>find
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><aside class="notes">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a7dbc9e1-f88f-4b44-be3a-544d845ff219">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4931812e-0027-4295-98e1-29059f27d0e2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Command-line-history">Command line history<a class="anchor-link" href="#Command-line-history">¶</a></h2><p><code>history</code> show commands previously issued</p>
+<p><code>up arrow</code> cycle through previous commands</p>
+<p><code>Ctrl-R</code> search through history for command</p>
+<p><code>.bash_history</code> file that stores the history</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a01dd09a-128f-42f7-bca7-34e560498d5e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Other-useful-shortcuts">Other useful shortcuts<a class="anchor-link" href="#Other-useful-shortcuts">¶</a></h2><p><code>tab</code> -- autocomplete</p>
+<p><code>Ctrl-D</code> -- EOF/logout/exit</p>
+<p><code>Ctrl-A</code> -- go to beginning of line</p>
+<p><code>Ctrl-E</code> -- go to end of line</p>
+<p><code>alias new=cmd</code> -- make a nickname for a command (from the command line directly, not in Jupyter)</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a70f0e04">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Further-resources">Further resources<a class="anchor-link" href="#Further-resources">¶</a></h2><ul>
+<li><a href="https://swcarpentry.github.io/shell-novice/">Software‑Carpentry Unix Shell lesson</a></li>
+<li>Printable cheat‑sheet: “Twenty most useful Unix commands” (link in Canvas).</li>
+<li>Optional: install <strong>Oh My Zsh</strong> (macOS/Linux) or <strong>Git Bash</strong> (Windows) for improved prompts.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=15bf4ec3-cd93-49b9-9513-72f86849583a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Next-time">Next time<a class="anchor-link" href="#Next-time">¶</a></h2><ul>
+<li>Environment variables</li>
+<li>Simple shell scripts</li>
+<li>Text manipulation on the command line</li>
+</ul>
 </div>
 </div>
 </div>
