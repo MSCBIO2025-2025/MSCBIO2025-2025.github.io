@@ -1,5 +1,5 @@
 # MSCBIO 2025: Introduction to bioinformatics programming in Python
-### Fall 2024
+### Fall 2025
 
 
 # Logistics
