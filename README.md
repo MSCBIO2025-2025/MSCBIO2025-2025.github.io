@@ -85,27 +85,29 @@ Information for the course, including homework assignments and information about
 
 Follow the **assignment** links below to work on and submit each homework through GitHub Classroom.
 
-<!-- **Homework 01** -- Bash introduction [[assignment](https://classroom.github.com/a/O8vqF3DV)]  
+<!-- 09/02 -- 09/09 -->
+<!-- **Homework 01** -- Bash introduction [[assignment](https://classroom.github.com/a/pwpKzaBv)]  
 
-**Homework 02** -- Plots in Python [[assignment](https://classroom.github.com/a/gW2l8j1F)]  
+<!-- 09/09 -- 09/16 -->
+<!-- **Homework 02** -- Plots in Python [[assignment]()]   -->
 
-**Homework 03** -- Function fitting [[assignment](https://classroom.github.com/a/iQEf8KZw)]  
+<!-- **Homework 03** -- Function fitting [[assignment]()]   -->
 
-**Homework 04** -- Systems biology modeling [[assignment](https://classroom.github.com/a/8e2DkUpP)]  
+<!-- **Homework 04** -- Systems biology modeling [[assignment]()]   -->
 
-**Homework 05** -- Sequence processing [[assignment](https://classroom.github.com/a/f0ZY5SdB)]  
+<!-- **Homework 05** -- Sequence processing [[assignment]()]   -->
 
-**Homework 06** -- Data analysis with pandas [[assignment](https://classroom.github.com/a/4UvZ1WOs)]  
+<!-- **Homework 06** -- Data analysis with pandas [[assignment]()]   -->
 
-**Homework 07** -- Protein dynamics [[assignment](https://classroom.github.com/a/lnOvRKgq)]  
+<!-- **Homework 07** -- Protein dynamics [[assignment]()]   -->
 
-**Homework 08** -- Molecular dynamics [[assignment](https://classroom.github.com/a/5UgZtuEk)]  
+<!-- **Homework 08** -- Molecular dynamics [[assignment]()]   -->
 
-**Homework 09** -- Dimensionality reduction [[assignment](https://mscbio2025-2025.github.io/files/assignment9/Assignment_9_dimred.ipynb)]  [[Single-cell datafile](https://mscbio2025-2025.github.io/files/assignment9/5k_pbmc_protein_v3_nextgem_filtered_feature_bc_matrix.h5)][[Answer template](https://mscbio2025-2025.github.io/files/assignment9/assignment9_template.txt)][[Figure to analyze](https://mscbio2025-2025.github.io/files/assignment9/dimensionality_reduction_comparison.png)]
+<!-- **Homework 09** -- Dimensionality reduction [[assignment]()]  [[Single-cell datafile](https://mscbio2025-2025.github.io/files/assignment9/5k_pbmc_protein_v3_nextgem_filtered_feature_bc_matrix.h5)][[Answer template](https://mscbio2025-2025.github.io/files/assignment9/assignment9_template.txt)][[Figure to analyze](https://mscbio2025-2025.github.io/files/assignment9/dimensionality_reduction_comparison.png)] -->
 
-**Homework 10** -- Machine Learning [[assignment](https://mscbio2025-2025.github.io/files/assignment10/Assignment_10.ipynb)][[Answer template](https://mscbio2025-2025.github.io/files/assignment10/assignment10_template.txt)]
+<!-- **Homework 10** -- Machine Learning [[assignment]()][[Answer template](https://mscbio2025-2025.github.io/files/assignment10/assignment10_template.txt)] -->
 
-**Homework 11** -- Deep Learning [[assignment](https://mscbio2025-2025.github.io/files/assignment11/Assignment_11.ipynb)] -->
+<!-- **Homework 11** -- Deep Learning [[assignment]()] --> -->
 
 ## Past versions of the course
 
