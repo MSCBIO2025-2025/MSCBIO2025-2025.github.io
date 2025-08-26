@@ -16,7 +16,7 @@ Information for the course, including homework assignments and information about
 **Lecture 01** -- Introduction to MSCBIO 2025 and setup [[reading](https://kirenz.github.io/codelabs/codelabs/miniforge-setup/#0)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-01-introduction.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-01-introduction.ipynb)] 
 
 <!-- 08/28 --> 
-<!-- **Lecture 02** -- File systems and bash [[reading](https://swcarpentry.github.io/shell-novice/)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-02-files.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-02-files.ipynb)]  -->
+**Lecture 02** -- File systems and bash [[reading](https://swcarpentry.github.io/shell-novice/)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-02-files.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-02-files.ipynb)]
 
 <!-- 09/02 -->
 <!-- **Lecture 03** -- More on the command line [[reading](https://www.freecodecamp.org/news/linux-command-line-tutorial/)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-03-bash.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-03-bash.ipynb)] -->
@@ -107,7 +107,7 @@ Follow the **assignment** links below to work on and submit each homework throug
 
 <!-- **Homework 10** -- Machine Learning [[assignment]()][[Answer template](https://mscbio2025-2025.github.io/files/assignment10/assignment10_template.txt)] -->
 
-<!-- **Homework 11** -- Deep Learning [[assignment]()] --> -->
+<!-- **Homework 11** -- Deep Learning [[assignment]()] -->
 
 ## Past versions of the course
 
