@@ -11,19 +11,24 @@ In person in Murdoch 814 from 12 - 1:20 pm Tuesdays and Thursdays.
 John P. Barton  
 Murdoch 830  
 jpbarton@pitt.edu  
+Office hours: By email.
 
 Shikhar Uttam  
 Hillman Cancer Center Research Pavilion Suite 2.6f  
 shf28@pitt.edu  
+Office hours: By email.
 
 Mert Gur  
 Murdoch 832  
 gurmert@pitt.edu  
+Office hours: By email.
 
 ### Teaching assistant
 Rezwan Hosseini  
 SEH197@pitt.edu  
-
+`Office hours:
+Monday 1-2pm, mini Conference Room, 8th floor, Murdoch Building.
+Wednesday-Friday 1-2pm, main Conference Room, 7th floor, Murdoch Building.'
 
 # Course summary
 Computers have become essential tools for biology, as well as other scientific disciplines. This course will provide students with experience using the Python programming language to solve problems and analyze biological data. We will also cover general principles of computational analysis that will help students become more productive researchers. Topic areas include:  
