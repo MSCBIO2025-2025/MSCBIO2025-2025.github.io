@@ -28,6 +28,7 @@ Rezwan Hosseini
 SEH197@pitt.edu  
 Office hours:
 Monday 1-2pm, mini Conference Room, 8th floor, Murdoch Building.
+
 Wednesday-Friday 1-2pm, main Conference Room, 7th floor, Murdoch Building.
 
 # Course summary
