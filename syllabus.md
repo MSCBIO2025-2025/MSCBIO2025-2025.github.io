@@ -26,9 +26,9 @@ Office hours: By email.
 ### Teaching assistant
 Rezwan Hosseini  
 SEH197@pitt.edu  
-'Office hours:
+Office hours:
 Monday 1-2pm, mini Conference Room, 8th floor, Murdoch Building.
-Wednesday-Friday 1-2pm, main Conference Room, 7th floor, Murdoch Building.'
+Wednesday-Friday 1-2pm, main Conference Room, 7th floor, Murdoch Building.
 
 # Course summary
 Computers have become essential tools for biology, as well as other scientific disciplines. This course will provide students with experience using the Python programming language to solve problems and analyze biological data. We will also cover general principles of computational analysis that will help students become more productive researchers. Topic areas include:  
