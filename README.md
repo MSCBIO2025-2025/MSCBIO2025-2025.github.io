@@ -22,7 +22,7 @@ Information for the course, including homework assignments and information about
 **Lecture 03** -- More on the command line [[reading](https://www.freecodecamp.org/news/linux-command-line-tutorial/)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-03-bash.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-03-bash.ipynb)]
 
 <!-- 09/04 -->
-<!-- **Lecture 04** -- Introduction to Python [[reading](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-04-python.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-04-python.ipynb)] -->
+**Lecture 04** -- Introduction to Python [[reading](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-04-python.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-04-python.ipynb)] -->
 
 <!-- 09/09 -->
 <!-- **Lecture 05** -- Data visualization [[reading](https://thepythoncodingbook.com/basics-of-data-visualisation-in-python-using-matplotlib/)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-05-plot.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-05-plot.ipynb)] -->
