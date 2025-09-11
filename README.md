@@ -28,13 +28,13 @@ Information for the course, including homework assignments and information about
 **Lecture 05** -- Data visualization [[reading](https://thepythoncodingbook.com/basics-of-data-visualisation-in-python-using-matplotlib/)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-05-plot.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-05-plot.ipynb)]
 
 <!-- 09/11 -->
-**Lecture 06** -- Vectors with numpy [[reading](https://numpy.org/doc/stable/user/absolute_beginners.html)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-06-numpy.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-06-numpy.ipynb)] -->
+**Lecture 06** -- Vectors with numpy [[reading](https://numpy.org/doc/stable/user/absolute_beginners.html)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-06-numpy.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-06-numpy.ipynb)]
 
 <!-- 09/16 -->
-<!-- **Lecture 07** -- Differential equation modeling [[reading]()] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-07-diffeq.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-07-diffeq.ipynb)] -->
+**Lecture 07** -- Differential equation modeling [[reading (introduction)](https://www.math.uwaterloo.ca/~bingalls/MMSB/MMSB_w_solutions.pdf)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-07-diffeq.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-07-diffeq.ipynb)] -->
 
 <!-- 09/18 -->
-<!-- **Lecture 08** -- Principles of code design and functions [[reading]()] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-08-code.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-08-code.ipynb)] -->
+<!-- **Lecture 08** -- Principles of code design and functions [[reading 1](https://realpython.com/documenting-python-code/)] [[reading 2](https://docs.python.org/3/tutorial/errors.html)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-08-code.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-08-code.ipynb)] -->
 
 <!-- 09/23 -->
 <!-- **Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)]  -->
