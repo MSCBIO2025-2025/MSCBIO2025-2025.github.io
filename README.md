@@ -91,6 +91,9 @@ Follow the **assignment** links below to work on and submit each homework throug
 <!-- 09/09 -- 09/16 -->
 **Homework 02** -- Plotting in Python [[assignment](https://classroom.github.com/a/olerXqEX)]
 
+<!-- 09/16 -- 09/23 -->
+**Homework 03** -- Differential equations [[assignment](https://classroom.github.com/a/tERAcbi8)]
+
 <!-- **Homework 03** -- Function fitting [[assignment]()]   -->
 
 <!-- **Homework 04** -- Systems biology modeling [[assignment]()]   -->
