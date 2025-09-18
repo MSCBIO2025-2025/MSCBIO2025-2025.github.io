@@ -34,7 +34,7 @@ Information for the course, including homework assignments and information about
 **Lecture 07** -- Differential equation modeling [[reading (introduction)](https://www.math.uwaterloo.ca/~bingalls/MMSB/MMSB_w_solutions.pdf)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-07-diffeq.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-07-diffeq.ipynb)]
 
 <!-- 09/18 -->
-**Lecture 08** -- Principles of code design and functions [[reading 1](https://realpython.com/documenting-python-code/)] [[reading 2](https://docs.python.org/3/tutorial/errors.html)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-08-code.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-08-code.ipynb)] -->
+**Lecture 08** -- Principles of code design and functions [[reading 1](https://realpython.com/documenting-python-code/)] [[reading 2](https://docs.python.org/3/tutorial/errors.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-08-code.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-08-code.ipynb)] <!-- -->
 
 <!-- 09/23 -->
 <!-- **Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)]  -->
