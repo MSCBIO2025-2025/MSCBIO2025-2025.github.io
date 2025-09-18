@@ -37,7 +37,7 @@ Information for the course, including homework assignments and information about
 **Lecture 08** -- Principles of code design and functions [[reading 1](https://realpython.com/documenting-python-code/)] [[reading 2](https://docs.python.org/3/tutorial/errors.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-08-code.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-08-code.ipynb)] <!-- -->
 
 <!-- 09/23 -->
-<!-- **Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)]  -->
+**Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)]  -->
 
 <!--  09/25 -->
 <!-- **Lecture 10** -- Systems biology modeling [[reading](http://bionetgen.org/)] [[materials](https://github.com/jrfaeder/RBM_Intro_BioNetGen)]  -->
