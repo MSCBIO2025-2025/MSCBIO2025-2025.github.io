@@ -94,7 +94,8 @@ Follow the **assignment** links below to work on and submit each homework throug
 <!-- 09/16 -- 09/23 -->
 **Homework 03** -- Differential equations [[assignment](https://classroom.github.com/a/tERAcbi8)]
 
-<!-- **Homework 03** -- Function fitting [[assignment]()]   -->
+<!-- 09/23 -- 09/30 -->
+<!-- **Homework 03** -- Function fitting [[assignment](https://classroom.github.com/a/B8ahqWcj)]   -->
 
 <!-- **Homework 04** -- Systems biology modeling [[assignment]()]   -->
 
