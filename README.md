@@ -37,10 +37,10 @@ Information for the course, including homework assignments and information about
 **Lecture 08** -- Principles of code design and functions [[reading 1](https://realpython.com/documenting-python-code/)] [[reading 2](https://docs.python.org/3/tutorial/errors.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-08-code.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-08-code.ipynb)] <!-- -->
 
 <!-- 09/23 -->
-**Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)]  -->
+**Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)] <!-- -->
 
 <!--  09/25 -->
-<!-- **Lecture 10** -- Systems biology modeling [[reading](http://bionetgen.org/)] [[materials](https://github.com/jrfaeder/RBM_Intro_BioNetGen)]  -->
+**Lecture 10** -- Systems biology modeling [[reading](http://bionetgen.org/)] <!-- [[materials](https://github.com/jrfaeder/RBM_Intro_BioNetGen)]  -->
 
 <!-- 09/30 -->
 <!-- **Lecture 11** -- Principles of data analysis and pandas [[reading](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.ipynb)]  -->
@@ -95,7 +95,7 @@ Follow the **assignment** links below to work on and submit each homework throug
 **Homework 03** -- Differential equations [[assignment](https://classroom.github.com/a/tERAcbi8)]
 
 <!-- 09/23 -- 09/30 -->
-<!-- **Homework 03** -- Function fitting [[assignment](https://classroom.github.com/a/B8ahqWcj)]   -->
+**Homework 04** -- Function fitting [[assignment](https://classroom.github.com/a/B8ahqWcj)]  <!--  -->
 
 <!-- **Homework 04** -- Systems biology modeling [[assignment]()]   -->
 
