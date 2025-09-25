@@ -40,10 +40,10 @@ Information for the course, including homework assignments and information about
 **Lecture 09** -- Function fitting [[reading](https://www.askpython.com/python/examples/curve-fitting-in-python)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-09-fitting.ipynb)] <!-- -->
 
 <!--  09/25 -->
-**Lecture 10** -- Systems biology modeling [[reading](http://bionetgen.org/)] <!-- [[materials](https://github.com/jrfaeder/RBM_Intro_BioNetGen)]  -->
+**Lecture 10** -- Systems biology modeling [[reading](http://bionetgen.org/)] [[materials](https://github.com/jrfaeder/RBM_Intro_BioNetGen)]  <!-- -->
 
 <!-- 09/30 -->
-<!-- **Lecture 11** -- Principles of data analysis and pandas [[reading](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.ipynb)]  -->
+**Lecture 11** -- Principles of data analysis and pandas [[reading](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.ipynb)]  -->
 
 <!-- 10/02 -->
 <!-- **Lecture 12** -- Tabular data with Pandas [[reading](https://aeturrell.github.io/python4DS/data-tidy.html)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.ipynb)]  -->
