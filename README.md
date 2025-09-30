@@ -86,18 +86,19 @@ Information for the course, including homework assignments and information about
 Follow the **assignment** links below to work on and submit each homework through GitHub Classroom.
 
 <!-- 09/02 -- 09/09 -->
-**Homework 01** -- Bash introduction [[assignment](https://classroom.github.com/a/pwpKzaBv)]  
+**Homework 01** -- Bash introduction [[assignment](https://classroom.github.com/a/pwpKzaBv)]  <!--  -->
 
 <!-- 09/09 -- 09/16 -->
-**Homework 02** -- Plotting in Python [[assignment](https://classroom.github.com/a/olerXqEX)]
+**Homework 02** -- Plotting in Python [[assignment](https://classroom.github.com/a/olerXqEX)]  <!--  -->
 
 <!-- 09/16 -- 09/23 -->
-**Homework 03** -- Differential equations [[assignment](https://classroom.github.com/a/tERAcbi8)]
+**Homework 03** -- Differential equations [[assignment](https://classroom.github.com/a/tERAcbi8)]  <!--  -->
 
 <!-- 09/23 -- 09/30 -->
 **Homework 04** -- Function fitting [[assignment](https://classroom.github.com/a/B8ahqWcj)]  <!--  -->
 
-<!-- **Homework 04** -- Systems biology modeling [[assignment]()]   -->
+<!-- 09/30 -- 10/07 -->
+**Homework 05** -- Systems biology modeling [[assignment](https://classroom.github.com/a/Q_oyOWyw)]  <!--  -->
 
 <!-- **Homework 05** -- Sequence processing [[assignment]()]   -->
 
