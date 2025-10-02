@@ -43,13 +43,13 @@ Information for the course, including homework assignments and information about
 **Lecture 10** -- Systems biology modeling [[reading](http://bionetgen.org/)] [[materials](https://github.com/jrfaeder/RBM_Intro_BioNetGen)]  <!-- -->
 
 <!-- 09/30 -->
-**Lecture 11** -- Principles of data analysis and pandas [[reading](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.ipynb)]  <!-- -->
+**Lecture 11** -- Principles of data analysis and pandas [[reading](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-11-pandas.ipynb)]  <!-- -->
 
 <!-- 10/02 -->
-**Lecture 12** -- Tabular data with Pandas [[reading](https://aeturrell.github.io/python4DS/data-tidy.html)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.ipynb)]  -->
+**Lecture 12** -- Tabular data with Pandas [[reading](https://aeturrell.github.io/python4DS/data-tidy.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.ipynb)] <!-- -->
 
 <!-- 10/07 -->
-<!-- **Lecture 13** -- Sequence analysis I [[reading](https://biopython-tutorial.readthedocs.io/en/latest/notebooks/02%20-%20Quick%20Start.html)] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.ipynb)]  -->
+**Lecture 13** -- Sequence analysis I [[reading](https://biopython-tutorial.readthedocs.io/en/latest/notebooks/02%20-%20Quick%20Start.html)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.ipynb)]  -->
 
 <!-- 10/09 -->
 <!-- **Lecture 14** -- Sequence analysis II [[reading]()] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.ipynb)]  -->
