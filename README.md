@@ -49,7 +49,7 @@ Information for the course, including homework assignments and information about
 **Lecture 12** -- Tabular data with Pandas [[reading](https://aeturrell.github.io/python4DS/data-tidy.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-12-pandas2.ipynb)] <!-- -->
 
 <!-- 10/07 -->
-**Lecture 13** -- Sequence analysis I [[reading](https://biopython-tutorial.readthedocs.io/en/latest/notebooks/02%20-%20Quick%20Start.html)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.ipynb)]  -->
+**Lecture 13** -- Sequence analysis I [[reading](https://biopython-tutorial.readthedocs.io/en/latest/notebooks/02%20-%20Quick%20Start.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.ipynb)] <!-- -->
 
 <!-- 10/09 -->
 <!-- **Lecture 14** -- Sequence analysis II [[reading]()] [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.ipynb)]  -->
@@ -100,9 +100,12 @@ Follow the **assignment** links below to work on and submit each homework throug
 <!-- 09/30 -- 10/07 -->
 **Homework 05** -- Systems biology modeling [[assignment](https://classroom.github.com/a/Q_oyOWyw)]  <!--  -->
 
-<!-- **Homework 05** -- Sequence processing [[assignment]()]   -->
+<!-- 10/07 -- 10/14 -->
+**Homework 06** -- Data analysis with pandas [[assignment](https://classroom.github.com/a/he_MlHEj)]  <!-- -->
 
-<!-- **Homework 06** -- Data analysis with pandas [[assignment]()]   -->
+<!-- 10/14 -- 10/21 -->
+<!-- **Homework 07** -- Sequence processing [[assignment](https://classroom.github.com/a/ne12n6nB)]   -->
+
 
 <!-- **Homework 07** -- Protein dynamics [[assignment]()]   -->
 
