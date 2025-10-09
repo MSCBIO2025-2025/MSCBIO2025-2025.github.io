@@ -52,14 +52,14 @@ Information for the course, including homework assignments and information about
 **Lecture 13** -- Sequence analysis I [[reading](https://biopython-tutorial.readthedocs.io/en/latest/notebooks/02%20-%20Quick%20Start.html)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-13-sequence.ipynb)]  <!-- -->
 
 <!-- 10/09 -->
-**Lecture 14** -- Sequence analysis II [[reading](https://biopython.org/docs/latest/Tutorial/chapter_motifs.html)]  <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.ipynb)]  -->
-
+**Lecture 14** -- Sequence analysis II [[reading](https://biopython.org/docs/latest/Tutorial/chapter_motifs.html)]   [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-sequence2.ipynb)]  <!-- -->
 
 
 <!-- 10/14 -->
-<!-- **Lecture 12** -- Protein dynamics with ProDy [[slides](https://mscbio2025-2025.github.io/lectures/lecture-12-prody.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-12-prody.ipynb)] 
+**Lecture 15** -- Protein dynamics with ProDy [[reading](http://www.bahargroup.org/prody/)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.ipynb)] 
 
-**Lecture 13** -- More protein dynamics [[slides](https://mscbio2025-2025.github.io/lectures/lecture-13-prody2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-13-prody2.ipynb)] 
+<!-- 
+**Lecture 16** -- More protein dynamics [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.ipynb)] 
 
 **Lecture 14** -- Molecular dynamics analysis I [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-md.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-md.ipynb)] 
 
