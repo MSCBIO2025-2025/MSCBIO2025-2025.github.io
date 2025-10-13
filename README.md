@@ -56,7 +56,7 @@ Information for the course, including homework assignments and information about
 
 
 <!-- 10/14 -->
-**Lecture 15** -- Protein dynamics with ProDy [[reading](http://www.bahargroup.org/prody/)] <!-- [[slides](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.ipynb)] -->
+**Lecture 15** -- Protein dynamics with ProDy [[reading](http://www.bahargroup.org/prody/)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.ipynb)]  <!-- -->
 
 <!-- 
 **Lecture 16** -- More protein dynamics [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.ipynb)] 
