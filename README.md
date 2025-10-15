@@ -58,9 +58,10 @@ Information for the course, including homework assignments and information about
 <!-- 10/14 -->
 **Lecture 15** -- Protein dynamics with ProDy [[reading](http://www.bahargroup.org/prody/)]  [[slides](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-15-prody.ipynb)]  <!-- -->
 
-<!-- 
+<!-- 10/16 -->
 **Lecture 16** -- More protein dynamics [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.ipynb)] 
 
+<!-- 
 **Lecture 14** -- Molecular dynamics analysis I [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-md.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-md.ipynb)] 
 
 **Lecture 15** -- Molecular dynamics analysis II [[slides](https://mscbio2025-2025.github.io/lectures/lecture-15-md2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-15-md2.ipynb)]
@@ -104,9 +105,9 @@ Follow the **assignment** links below to work on and submit each homework throug
 **Homework 06** -- Data analysis with pandas [[assignment](https://classroom.github.com/a/he_MlHEj)]  <!-- -->
 
 <!-- 10/14 -- 10/21 -->
-<!-- **Homework 07** -- Sequence processing [[assignment](https://classroom.github.com/a/ne12n6nB)]   -->
+**Homework 07** -- Sequence processing [[assignment](https://classroom.github.com/a/ne12n6nB)] <!--  -->
 
-
+<!-- 10/21 -- 10/28 -->
 <!-- **Homework 07** -- Protein dynamics [[assignment]()]   -->
 
 <!-- **Homework 08** -- Molecular dynamics [[assignment]()]   -->
