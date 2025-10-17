@@ -61,9 +61,11 @@ Information for the course, including homework assignments and information about
 <!-- 10/16 -->
 **Lecture 16** -- More protein dynamics [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-prody2.ipynb)] 
 
-<!-- 
-**Lecture 14** -- Molecular dynamics analysis I [[slides](https://mscbio2025-2025.github.io/lectures/lecture-14-md.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-14-md.ipynb)] 
-
+<!-- 10/21 -->
+**Lecture 17** -- Molecular dynamics analysis I [[slides](https://mscbio2025-2025.github.io/lectures/lecture-17-md.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-17-md.ipynb)] 
+ 
+<!-- 10/23 --> 
+<!--
 **Lecture 15** -- Molecular dynamics analysis II [[slides](https://mscbio2025-2025.github.io/lectures/lecture-15-md2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-15-md2.ipynb)]
 
 **Lecture 16** -- Clustering [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.ipynb)]
@@ -108,9 +110,10 @@ Follow the **assignment** links below to work on and submit each homework throug
 **Homework 07** -- Sequence processing [[assignment](https://classroom.github.com/a/ne12n6nB)] <!--  -->
 
 <!-- 10/21 -- 10/28 -->
-<!-- **Homework 07** -- Protein dynamics [[assignment]()]   -->
+<!-- **Homework 08** -- Protein dynamics [[assignment](https://classroom.github.com/a/Rahxwc19)]   -->
 
-<!-- **Homework 08** -- Molecular dynamics [[assignment]()]   -->
+<!-- 10/28 -- 11/04 -->
+<!-- **Homework 09** -- Molecular dynamics [[assignment](https://classroom.github.com/a/v_SJMqt9)]   -->
 
 <!-- **Homework 09** -- Dimensionality reduction [[assignment]()]  [[Single-cell datafile](https://mscbio2025-2025.github.io/files/assignment9/5k_pbmc_protein_v3_nextgem_filtered_feature_bc_matrix.h5)][[Answer template](https://mscbio2025-2025.github.io/files/assignment9/assignment9_template.txt)][[Figure to analyze](https://mscbio2025-2025.github.io/files/assignment9/dimensionality_reduction_comparison.png)] -->
 
