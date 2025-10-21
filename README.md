@@ -110,7 +110,7 @@ Follow the **assignment** links below to work on and submit each homework throug
 **Homework 07** -- Sequence processing [[assignment](https://classroom.github.com/a/ne12n6nB)] <!--  -->
 
 <!-- 10/21 -- 10/28 -->
-<!-- **Homework 08** -- Protein dynamics [[assignment](https://classroom.github.com/a/Rahxwc19)]   -->
+**Homework 08** -- Protein dynamics [[assignment](https://classroom.github.com/a/Rahxwc19)]  <!--  -->
 
 <!-- 10/28 -- 11/04 -->
 <!-- **Homework 09** -- Molecular dynamics [[assignment](https://classroom.github.com/a/v_SJMqt9)]   -->
