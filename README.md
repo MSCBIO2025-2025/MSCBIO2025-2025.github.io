@@ -65,11 +65,12 @@ Information for the course, including homework assignments and information about
 **Lecture 17** -- Molecular dynamics analysis I [[slides](https://mscbio2025-2025.github.io/lectures/lecture-17-md.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-17-md.ipynb)] 
  
 <!-- 10/23 --> 
-**Lecture 15** -- Molecular dynamics analysis II [[slides](https://mscbio2025-2025.github.io/lectures/lecture-18-md2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-18-md2.ipynb)]
+**Lecture 18** -- Molecular dynamics analysis II [[slides](https://mscbio2025-2025.github.io/lectures/lecture-18-md2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-18-md2.ipynb)]
+
+<!--10/28-->
+**Lecture 16** -- Clustering and [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.ipynb)]
 
 <!--
-**Lecture 16** -- Clustering [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.ipynb)]
-
 **Lecture 17** -- Dimensionality Reduction - I [[slides](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.ipynb)]
 
 **Lecture 18** -- Dimensionality Reduction - II [[slides](https://mscbio2025-2025.github.io/lectures/lecture18-dimred-2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture18-dimred-2.ipynb)]
