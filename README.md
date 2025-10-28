@@ -68,7 +68,7 @@ Information for the course, including homework assignments and information about
 **Lecture 18** -- Molecular dynamics analysis II [[slides](https://mscbio2025-2025.github.io/lectures/lecture-18-md2.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-18-md2.ipynb)]
 
 <!--10/28-->
-**Lecture 16** -- Clustering and [[slides](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture-16-clustering.ipynb)]
+**Lecture 19** -- Clustering and Dimensionality reduction [[slides](https://mscbio2025-2025.github.io/lectures/ClusteringAndDimensionalityReduction.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/ClusteringAndDimensionalityReduction.ipynb)]
 
 <!--
 **Lecture 17** -- Dimensionality Reduction - I [[slides](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.ipynb)]
