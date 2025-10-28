@@ -114,7 +114,7 @@ Follow the **assignment** links below to work on and submit each homework throug
 **Homework 08** -- Protein dynamics [[assignment](https://classroom.github.com/a/Rahxwc19)]  <!--  -->
 
 <!-- 10/28 -- 11/04 -->
-<!-- **Homework 09** -- Molecular dynamics [[assignment](https://classroom.github.com/a/v_SJMqt9)]   -->
+**Homework 09** -- Molecular dynamics [[assignment](https://classroom.github.com/a/v_SJMqt9)]  <!-- -->
 
 <!-- **Homework 09** -- Dimensionality reduction [[assignment]()]  [[Single-cell datafile](https://mscbio2025-2025.github.io/files/assignment9/5k_pbmc_protein_v3_nextgem_filtered_feature_bc_matrix.h5)][[Answer template](https://mscbio2025-2025.github.io/files/assignment9/assignment9_template.txt)][[Figure to analyze](https://mscbio2025-2025.github.io/files/assignment9/dimensionality_reduction_comparison.png)] -->
 
