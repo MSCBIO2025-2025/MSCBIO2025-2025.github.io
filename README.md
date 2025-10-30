@@ -70,6 +70,9 @@ Information for the course, including homework assignments and information about
 <!--10/28-->
 **Lecture 19** -- Clustering and Dimensionality reduction [[slides](https://mscbio2025-2025.github.io/lectures/ClusteringAndDimensionalityReduction.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/ClusteringAndDimensionalityReduction.ipynb)]
 
+<!--10/28-->
+**Lecture 20** -- Clustering and Dimensionality reduction-II [[slides](https://mscbio2025-2025.github.io/lectures/ClusteringAndDimensionalityReduction-II.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/ClusteringAndDimensionalityReduction-II.ipynb)]
+
 <!--
 **Lecture 17** -- Dimensionality Reduction - I [[slides](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.ipynb)]
 
