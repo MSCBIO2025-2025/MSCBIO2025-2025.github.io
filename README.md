@@ -2,10 +2,8 @@
 
 [Syllabus](./syllabus.html)  
 [Schedule](./schedule.html)  
+[Final](./final.html)  <!-- -->
 
-<!--
-[Project](./project.html)  
--->
 
 Information for the course, including homework assignments and information about exams, will be posted here as we progress through the semester.
 

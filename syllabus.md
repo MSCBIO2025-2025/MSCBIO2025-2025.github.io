@@ -8,7 +8,7 @@
 In person in Murdoch 814 from 12 - 1:20 pm Tuesdays and Thursdays.  
 
 ### Instructors
-John P. Barton  
+John Barton  
 Murdoch 830  
 jpbarton@pitt.edu  
 Office hours: By email.
@@ -42,7 +42,7 @@ We will use [Python 3](https://www.python.org/download/releases/3.0/) to introdu
 # Grading and assessment
 Credit will be assigned as follows:  
 - homework (70%)  
-- final project (30%)  
+- final exam (30%)  
 
 Homework assignments will be automatically graded through GitHub Classroom. A rubric is included with each assignment. You are free to resubmit your work as many times as you like before the deadline.  
 
