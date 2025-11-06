@@ -74,6 +74,9 @@ Information for the course, including homework assignments and information about
 <!--11/04-->
 **Lecture 21** -- RNA Sequencing [[slides](https://mscbio2025-2025.github.io/lectures/RNAseq.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/RNAseq.ipynb)]
 
+<!--11/06-->
+**Lecture 22** -- RNA Sequencing II [[slides](https://mscbio2025-2025.github.io/lectures/RNAseq-II.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/RNAseq-II.ipynb)]
+
 <!--
 **Lecture 17** -- Dimensionality Reduction - I [[slides](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.ipynb)]
 
