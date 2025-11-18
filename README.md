@@ -80,6 +80,9 @@ Information for the course, including homework assignments and information about
 <!--11/11-->
 **Lecture 23** -- RNA Sequencing III [[slides](https://mscbio2025-2025.github.io/lectures/RNAseq-III.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/RNAseq-III.ipynb)]
 
+<!--11/11-->
+**Lecture 24** -- Deep Learning [[slides](https://mscbio2025-2025.github.io/lectures/deeplearning.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/deeplearning.ipynb)]
+
 <!--
 **Lecture 17** -- Dimensionality Reduction - I [[slides](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.ipynb)]
 
