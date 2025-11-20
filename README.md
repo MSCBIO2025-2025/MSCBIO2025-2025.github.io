@@ -80,8 +80,11 @@ Information for the course, including homework assignments and information about
 <!--11/11-->
 **Lecture 23** -- RNA Sequencing III [[slides](https://mscbio2025-2025.github.io/lectures/RNAseq-III.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/RNAseq-III.ipynb)]
 
-<!--11/11-->
+<!--11/18-->
 **Lecture 24** -- Deep Learning [[slides](https://mscbio2025-2025.github.io/lectures/deeplearning.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/deeplearning.ipynb)]
+
+<!--11/20-->
+**Lecture 25** -- Tutorial [[slides](https://mscbio2025-2025.github.io/lectures/Tutorial.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/Tutorial.ipynb)]
 
 <!--
 **Lecture 17** -- Dimensionality Reduction - I [[slides](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.slides.html)] [[notebook](https://mscbio2025-2025.github.io/lectures/lecture17-dimred-1.ipynb)]
@@ -128,6 +131,8 @@ Follow the **assignment** links below to work on and submit each homework throug
 
 <!-- 10/28 -- 11/04 -->
 **Homework 09** -- Molecular dynamics [[assignment](https://classroom.github.com/a/v_SJMqt9)]  <!-- -->
+
+**Homework 10** -- Coming (11/22/2025) - Will cover clustering, dimensionality reduction, and RNA-seq.
 
 <!-- **Homework 09** -- Dimensionality reduction [[assignment]()]  [[Single-cell datafile](https://mscbio2025-2025.github.io/files/assignment9/5k_pbmc_protein_v3_nextgem_filtered_feature_bc_matrix.h5)][[Answer template](https://mscbio2025-2025.github.io/files/assignment9/assignment9_template.txt)][[Figure to analyze](https://mscbio2025-2025.github.io/files/assignment9/dimensionality_reduction_comparison.png)] -->
 
